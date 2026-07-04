@@ -1,0 +1,35 @@
+---
+const { title, active } = Astro.props;
+import "../styles/global.css";
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">
+  <a href="/">
+    <img src="/logo.png" alt="Travis Wooley" />
+  </a>
+</div>
+
+  <div>
+    <a href="/" class={active === "home" ? "active" : ""}>Home</a>
+    <a href="/resume" class={active === "resume" ? "active" : ""}>Resume</a>
+    <a href="/projects" class={active === "projects" ? "active" : ""}>Projects</a>
+    <a href="/contact" class={active === "contact" ? "active" : ""}>Contact</a>
+  </div>
+</nav>
+
+<main class="container">
+  <slot />
+</main>
+
+</body>
+</html>

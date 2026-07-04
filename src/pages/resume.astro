@@ -1,0 +1,169 @@
+---
+const name = "Travis Wooley";
+import "../styles/global.css";
+---
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | {name}</title>
+</head>
+
+<body>
+
+<nav>
+  <div><strong>{name}</strong></div>
+  <div>
+    <a href="/">Home</a>
+    <a href="/resume" class="active">Resume</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<h1>{name}</h1>
+
+<div class="contact">
+Temperance, MI 48182 | +1 734-731-9237 | twooley16044@gmail.com
+</div>
+
+<a class="download" href="/resume.pdf">Download PDF</a>
+
+<!-- ===================== SUMMARY ===================== -->
+<h2>PROFESSIONAL SUMMARY</h2>
+<div class="card">
+<p>
+Results-driven operations and program manager with 10+ years of experience across additive manufacturing, automotive dynamometer testing, and industrial production environments. Proven track record of building programs from the ground up, leading cross-functional teams, and delivering measurable business impact including seven-figure annual cost savings through a refurbishment program developed and managed from inception.
+</p>
+
+<p>
+Skilled in team leadership, vendor management, process improvement, SOP development, and technical systems development. Brings strong hands-on technical capability that enables direct problem solving in engineering and manufacturing environments.
+</p>
+</div>
+
+<!-- ===================== CORE ===================== -->
+<h2>CORE COMPETENCIES</h2>
+<div class="card">
+<ul>
+  <li><strong>Program & Operations Management:</strong> Department build-outs, budget management, KPI tracking, process improvement, cross-functional leadership</li>
+
+  <li><strong>Team Leadership:</strong> Hiring, onboarding, performance management, safety oversight, SOP and training development</li>
+
+  <li><strong>Vendor & Procurement:</strong> Multi-country vendor network, contract negotiation, sourcing, purchase authority</li>
+
+  <li><strong>Quality Assurance:</strong> ISO frameworks, APQP, PPAP, SPC, inspection systems, metrology tools</li>
+
+  <li><strong>Manufacturing Systems:</strong> SLS/SLA printing, diagnostics, repair workflows, production scaling</li>
+
+  <li><strong>Software & Automation:</strong> JavaScript, Python, React, internal tools, AI agent deployment</li>
+</ul>
+</div>
+
+<!-- ===================== EXPERIENCE ===================== -->
+<h2>PROFESSIONAL EXPERIENCE</h2>
+
+<!-- FORMLABS PROGRAM MANAGER -->
+<div class="card">
+<h3>FORMLABS — RMA Program Manager</h3>
+<p>Aug 2022 – Present</p>
+
+<ul>
+  <li>Built and scaled the RMA refurbishment program from the ground up as the department’s first hire — growing to a team of 3 direct reports processing approximately 300 machines per year, with an average five-figure value.</li>
+
+  <li>Deliver seven-figure annual net savings by refurbishing and returning machines to customers rather than shipping replacements — sustaining a 99%+ repair rate on all units.</li>
+
+  <li>Manage a six-figure annual operations budget, across over a dozen active domestic and international vendors.</li>
+
+  <li>Lead all team management functions: hiring, onboarding, performance reviews, safety training, and operational training.</li>
+
+  <li>Drive continuous process improvement: reduced Mean Time to Repair by 10% in Year 1, 7% in Year 2, and 3.6% in Year 3; lowered operational costs 2–5% annually; reduced company-wide RMA rates by 9% over three years through proactive service support.</li>
+
+  <li>Maintain 99%+ quarterly customer satisfaction scores and 100% inventory accuracy across all tracked parts and stock.</li>
+
+  <li>Enforce a rigorous quality standard: every refurbished machine is fully calibrated with factory equipment, scored on 36 dimensional measurements to ±300 microns, and cleared through a 50-point cosmetic inspection before shipment.</li>
+
+  <li>Developed and deployed Refurb Inventory Manager — a custom JavaScript/React inventory management application used daily by the team, supporting barcode/camera scanning, filtering, search, and bulk CSV import/export. Maintained 100% inventory accuracy since launch.</li>
+
+  <li>Designed and implemented an in-house AI agent (local Ollama instance integrated with OpenClaw) connecting all SOPs, technical documentation, and inventory data — enabling technicians to query procedures, locate parts, and assist in troubleshooting in real time.</li>
+
+  <li>Authored the majority of departmental SOPs, troubleshooting flowcharts, onboarding materials, and training documentation.</li>
+
+  <li>Manage sourcing, negotiation, and ongoing vendor relationships with over a dozen vendors and partners across the US, China, Vietnam, Hungary, Germany, and the UK.</li>
+
+  <li>Serve as a cross-functional technical resource for Engineering, R&D, Hardware Reliability, and Customer Support.</li>
+
+  <li>Maintain Formlabs in-house print farm of over 200 machines producing sample parts as well as customer orders.</li>
+
+  <li>Deployed directly to Tier 1 customer sites when field issues require the highest-level technical intervention.</li>
+</ul>
+</div>
+
+<!-- ENGINEERING TECH -->
+<div class="card">
+<h3>FORMLABS — Engineering & Maintenance Technician</h3>
+<p>Jun 2025 – Dec 2025</p>
+
+<ul>
+  <li>Planned and managed facility move and build-out logistics for refurbishment center and print farm.</li>
+
+  <li>Coordinated on-site tasks and schedules with outside contractors.</li>
+
+  <li>Installed and maintained resin storage systems, pumping systems, and automation equipment.</li>
+
+  <li>Supported infrastructure build-out including networking, pneumatic, and nitrogen systems.</li>
+
+  <li>Performed daily plant engineering and preventative maintenance tasks.</li>
+</ul>
+</div>
+
+<!-- JACOBS -->
+<div class="card">
+<h3>JACOBS TECHNOLOGY — Wing Lead / Dynamometer Technician</h3>
+<p>Apr 2014 – Aug 2022</p>
+
+<ul>
+  <li>Served as Wing Lead for 5 years, directing 5–14 technicians across a dedicated wing of Ford’s dynamometer laboratory.</li>
+
+  <li>Translated engineering requirements into executable test procedures and ensured QC review of first-pass results.</li>
+
+  <li>Responsible for wing safety and technician compliance.</li>
+
+  <li>Prepared, instrumented, installed, and tested engines and powertrains using AC, DC, inductive, and chassis dynamometers.</li>
+
+  <li>Executed emissions, catalyst development, durability, and extreme environment programs using PUMA, INCA, ATI, ADACS, CAS, MATLAB, LabView.</li>
+
+  <li>Installed and calibrated sensors, flow-meters, load cells, thermocouples, and more.</li>
+
+  <li>Operated Horiba and AVL gas analyzer systems and performed PLC/controls tuning.</li>
+</ul>
+</div>
+
+<!-- FOOD SERVICE -->
+<div class="card">
+<h3>FOOD SERVICE LEADERSHIP — Kitchen / Crew Lead</h3>
+<p>2009 – 2014</p>
+
+<ul>
+  <li>Led kitchen operations directing teams of 4–8 cooks during shifts.</li>
+
+  <li>Managed food prep, quality control, scheduling, training, and cash handling.</li>
+</ul>
+</div>
+
+<!-- ===================== EDUCATION ===================== -->
+<h2>EDUCATION</h2>
+
+<div class="card">
+<p>
+Monroe County Community College | Graduated April 2011<br />
+Associates of Applied Science — Computer Science (Programming)
+</p>
+</div>
+
+</div>
+
+</body>
+</html>
