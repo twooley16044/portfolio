@@ -1,0 +1,536 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title="ProjectForge | Travis Wooley" active="projects">
+  <section class="hero">
+    <div class="eyebrow">Case Study</div>
+
+    <div class="hero-grid">
+      <div>
+        <h1>ProjectForge — Technical Program Management Platform</h1>
+
+        <h2>A local-first portfolio prototype for managing product engineering programs, industrial manufacturing projects, stage-gate execution, launch readiness, cross-functional ownership, risk, procurement visibility, file vault records, activity threads, and executive status reporting.</h2>
+
+        <div class="badge-row">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Vite</span>
+          <span class="tag">IndexedDB</span>
+          <span class="tag">Local-First</span>
+          <span class="tag">Stage-Gate TPM</span>
+          <span class="tag">Risk Management</span>
+          <span class="tag">Launch Readiness</span>
+          <span class="tag">File Vault</span>
+          <span class="tag">AI Decision-Support</span>
+        </div>
+
+        <p class="hero-text">
+          ProjectForge is a completed high-fidelity portfolio prototype designed to demonstrate how technical program management can be organized around realistic engineering and industrial execution workflows without implying a production-ready cloud platform.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#walkthrough" class="button primary">View Product Walkthrough</a>
+          <a href="/projects" class="button secondary">Back to Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="/images/ProjectForge/PFDashboard.png" alt="ProjectForge operations command center dashboard" />
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-facts">
+    <div class="fact-card">
+      <h3>Status</h3>
+      <p>High-Fidelity Portfolio Prototype</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Purpose</h3>
+      <p>Technical Program Management for Engineering and Industrial Execution</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Core Workflows</h3>
+      <p>Portfolio • Intake • Phase Gates • Tasks • Risks • RACI • Readiness • Procurement • File Vault • Reports</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Data Model</h3>
+      <p>Local-first IndexedDB persistence with localStorage fallback and JSON backup/export concepts</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Focus</h3>
+      <p>Engineering Operations, Technical Program Management, Manufacturing Launch, Cross-Functional Execution</p>
+    </div>
+  </section>
+
+  <section id="overview">
+    <h2>Overview</h2>
+
+    <div class="card">
+      <p>
+        ProjectForge is a local-first Technical Program Management platform designed to coordinate complex engineering and industrial programs from intake through execution, risk control, launch readiness, and sustaining handoff.
+      </p>
+      <p>
+        The prototype centers on realistic TPM workflows including project intake and chartering, portfolio visibility, stage-gate execution, task and milestone tracking, risk management, stakeholder and RACI ownership, budget and procurement visibility, launch readiness, local file vault records, activity threads, executive reporting, and AI-assisted decision support.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Problem</h2>
+
+    <div class="card">
+      <p>
+        Engineering and manufacturing initiatives often depend on disconnected spreadsheets, emails, shared folders, meeting notes, procurement trackers, informal status updates, and manually maintained file repositories.
+      </p>
+      <p>
+        That fragmentation creates gaps in accountability, launch readiness, risk visibility, stakeholder alignment, evidence control, and executive reporting.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Solution</h2>
+
+    <div class="card">
+      <p>
+        ProjectForge centralizes technical program execution into a single command center where stakeholders can track a portfolio of programs, intake new charters, manage stage gates, assign tasks, log risks, monitor readiness, review procurement exposure, register project files, publish coordination notes, generate status reports, and use decision-support insights.
+      </p>
+      <p>
+        The experience is positioned as a thoughtfully designed local-first product concept for technical program management rather than a generalized task app or production SaaS platform.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Key Features</h2>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="emoji">🧭</div>
+        <h3>Operations Command Center</h3>
+        <p>Portfolio-level command dashboard showing active programs, readiness, capital allocation, launch blockers, risk categories, and decision-support intelligence.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">📊</div>
+        <h3>Project Portfolio</h3>
+        <p>Filterable catalog of active and proposed engineering programs with readiness scores, phases, launch targets, and program ownership.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">📝</div>
+        <h3>Project Intake Charter</h3>
+        <p>Structured intake workflow for defining business objectives, technical scope, target launch dates, budget estimates, core owners, constraints, and success criteria.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🏗️</div>
+        <h3>Project Workspace</h3>
+        <p>Project-level workspace that brings together scope, success criteria, constraints, owners, timeline expectations, and launch context in one place.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🚦</div>
+        <h3>Stage-Gate Tracker</h3>
+        <p>Ten-phase execution model covering kickoff, feasibility, concept design, engineering build, procurement, site readiness, installation, validation, pre-production, and sustaining handoff.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">✅</div>
+        <h3>Tasks and Milestones</h3>
+        <p>Milestone ledger and task workspace showing owners, departments, due dates, blocker flags, dependencies, and status progression.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">⚠️</div>
+        <h3>Industrial Risk Register</h3>
+        <p>Risk register with probability-impact heat map, mitigation plans, lead owners, trigger conditions, and active risk exposure.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🚀</div>
+        <h3>Launch Readiness Checklist</h3>
+        <p>Readiness checklist calculated from required-for-launch items, blocker penalties, evidence notes, ownership, due dates, and completion status.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🤝</div>
+        <h3>Stakeholders and RACI Matrix</h3>
+        <p>Responsibility matrix mapping cross-functional accountability across program management, engineering, manufacturing, quality, procurement, and executive sponsorship.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">💰</div>
+        <h3>Budget and Procurement Summary</h3>
+        <p>Visibility into allocated capital, committed spend, remaining reserves, long-lead items, supplier status, and delivery risk.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">📁</div>
+        <h3>Local File Vault</h3>
+        <p>Browser-local document repository concept for registering CAD drawings, PDFs, vendor quotes, validation records, specifications, and project evidence.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🗂️</div>
+        <h3>Chronological Activity Thread</h3>
+        <p>Cross-functional coordination log for decision notes, blocker escalations, quality sign-offs, and program updates.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">📈</div>
+        <h3>Executive Status Reports</h3>
+        <p>Stakeholder-ready reporting that compiles status, launch readiness, blockers, risk exposure, budget notes, accomplishments, and next actions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🤖</div>
+        <h3>Program Intelligence Assistant</h3>
+        <p>Decision-support assistant concept that summarizes readiness gaps, procurement risk, blocker patterns, and suggested mitigation actions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🧠</div>
+        <h3>Data Management and Local Persistence</h3>
+        <p>IndexedDB-backed data services with localStorage fallback and JSON import/export for backup, migration, and archival concepts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🔌</div>
+        <h3>Storage Strategy Panel</h3>
+        <p>Prototype view for local-machine folders, mapped network drives, cloud backup concepts, and future team data architecture planning.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🌐</div>
+        <h3>Simulated Enterprise Integration Hub</h3>
+        <p>Future-state integration concept for workspace file storage, ERP procurement, QMS systems, shopfloor telemetry, and enterprise directory services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="walkthrough">
+    <h2>Screenshot Walkthrough</h2>
+    <p class="gallery-intro">A polished walkthrough of the ProjectForge experience, emphasizing the operations command center, portfolio workflow, execution controls, readiness planning, and local-first data model.</p>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Operations Command Center</span>
+      <h3>Executive Portfolio View</h3>
+      <p>Portfolio-level command center showing active programs, at-risk launches, readiness scores, capital allocation, critical launch blockers, upcoming launch windows, operational risk categories, heuristic program intelligence, and simulated enterprise integration readiness.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFDashboard.png" alt="ProjectForge operations command center dashboard" loading="eager" data-modal-group="operations" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Portfolio and Intake</span>
+      <h3>Program Portfolio and Chartering</h3>
+      <p>Project portfolio and intake charter workflow for filtering active programs, reviewing launch readiness, and creating new engineering or industrial project baselines with owners, budgets, scope, constraints, and target launch dates.</p>
+      <div class="walkthrough-images two-up">
+        <img src="/images/ProjectForge/PFProjectPortfolio.png" alt="ProjectForge project portfolio view" loading="lazy" data-modal-group="portfolio" data-modal-index="0" />
+        <img src="/images/ProjectForge/PFProjectIntakeForm.png" alt="ProjectForge project intake charter form" loading="lazy" data-modal-group="portfolio" data-modal-index="1" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Project Workspace</span>
+      <h3>Program Workspace Overview</h3>
+      <p>Project-level workspace showing business objectives, technical scope, success criteria, design constraints, functional ownership, executive sponsor, and target launch details.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWOverview.png" alt="ProjectForge project workspace overview" loading="lazy" data-modal-group="workspace" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Stage-Gate Execution</span>
+      <h3>Lifecycle and Phase Controls</h3>
+      <p>Phase-gate tracker showing lifecycle progression, validation criteria, active blockers, required cross-functional approvals, and phase review status.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWPhaseGates.png" alt="ProjectForge stage-gate tracker" loading="lazy" data-modal-group="phase-gates" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Tasks and Milestones</span>
+      <h3>Execution Ledger</h3>
+      <p>Milestone ledger and task management workspace showing owners, departments, due dates, blocker flags, dependencies, and status progression across technical deliverables.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWTasks.png" alt="ProjectForge tasks and milestones workspace" loading="lazy" data-modal-group="tasks" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Industrial Risk Register</span>
+      <h3>Launch-Critical Risk Visibility</h3>
+      <p>Risk register with probability-impact heat map, mitigation plans, lead owners, trigger conditions, and active risk exposure for launch-critical issues.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWRiskReg.png" alt="ProjectForge industrial risk register" loading="lazy" data-modal-group="risk" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Launch Readiness</span>
+      <h3>Readiness Planning</h3>
+      <p>Launch readiness checklist calculating readiness score from required-for-launch items, blocker penalties, evidence notes, ownership, due dates, and completion status.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWLaunchReadiness.png" alt="ProjectForge launch readiness checklist" loading="lazy" data-modal-group="launch-readiness" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Stakeholders and RACI</span>
+      <h3>Cross-Functional Ownership</h3>
+      <p>RACI responsibility matrix mapping accountability across program management, engineering, manufacturing, quality, procurement, and executive sponsorship.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWRaci.png" alt="ProjectForge stakeholder RACI matrix" loading="lazy" data-modal-group="raci" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Budget and Procurement</span>
+      <h3>Procurement and Capital Visibility</h3>
+      <p>Budget and procurement summary showing allocated capital, committed PO spend, remaining reserves, long-lead items, supplier status, delivery risk, and purchasing visibility for stakeholders.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWBudget.png" alt="ProjectForge budget and procurement summary" loading="lazy" data-modal-group="budget" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Local File Vault</span>
+      <h3>Evidence and Document Control Concepts</h3>
+      <p>Local document vault concept for registering engineering drawings, CAD files, PDFs, spreadsheets, vendor quotes, validation records, and project evidence to the active program workspace.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWFileVault.png" alt="ProjectForge local file vault" loading="lazy" data-modal-group="file-vault" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Activity Thread</span>
+      <h3>Coordination and Decision History</h3>
+      <p>Simulated collaboration and activity thread for publishing decision notes, blocker escalations, engineering updates, file upload events, quality sign-off notes, and operational coordination records.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWActivity.png" alt="ProjectForge chronological activity thread" loading="lazy" data-modal-group="activity" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Executive Status Reports</span>
+      <h3>Stakeholder Reporting</h3>
+      <p>Executive status report generator compiling project status, launch readiness, blockers, risk exposure, budget notes, accomplishments, and next actions into a stakeholder-ready update.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWStatus.png" alt="ProjectForge executive status report" loading="lazy" data-modal-group="status" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Program Intelligence Assistant</span>
+      <h3>Heuristic Decision Support</h3>
+      <p>Decision-support assistant concept that summarizes readiness gaps, procurement risks, blocker patterns, and suggested mitigation actions for project owner review.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWAssistant.png" alt="ProjectForge program intelligence assistant" loading="lazy" data-modal-group="assistant" data-modal-index="0" />
+      </div>
+    </div>
+
+    <div class="walkthrough-group">
+      <span class="gallery-label">Data Management and Storage Strategy</span>
+      <h3>Local-First Data Console</h3>
+      <p>Local-first data management console showing IndexedDB status, JSON backup/import controls, record counts, reset tools, and future storage strategy concepts for local folders, network drives, cloud/team backends, and Microsoft 365 or Google Workspace file storage.</p>
+      <div class="walkthrough-images single">
+        <img src="/images/ProjectForge/PFWDataLogs.png" alt="ProjectForge local data management and storage strategy console" loading="lazy" data-modal-group="data" data-modal-index="0" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Stack</h2>
+
+    <div class="card">
+      <div class="stack-grid">
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Vite</span>
+        <span class="tag">IndexedDB</span>
+        <span class="tag">localStorage fallback</span>
+        <span class="tag">JSON export/import</span>
+        <span class="tag">Local-first data services</span>
+        <span class="tag">Simulated role selector</span>
+        <span class="tag">Simulated activity/comments</span>
+        <span class="tag">File Vault metadata concepts</span>
+        <span class="tag">Heuristic decision-support logic</span>
+        <span class="tag">Portfolio-focused front-end architecture</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Local-First Architecture</h2>
+
+    <div class="card">
+      <p>
+        ProjectForge was designed with browser-local persistence so project records, tasks, risks, readiness items, procurement records, file metadata, activity notes, comments, and configuration data can remain available after refresh.
+      </p>
+      <p>
+        JSON export and import support backup, migration, and archival snapshots. Future architecture concepts include selectable local-machine folder storage, mapped network-drive storage, OneDrive or Google Drive synced folder backup, a desktop app wrapper using Tauri or Electron, and team backends using PostgreSQL, Supabase, Firebase, or similar services.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Simulated Enterprise Integration Boundary</h2>
+
+    <div class="disclaimer-card">
+      <p>
+        ProjectForge includes simulated enterprise integration concepts for workspace file storage, enterprise directories, ERP procurement, Quality Management Systems, shopfloor telemetry, Microsoft 365, Google Workspace, office-suite exports, calendar sync, file vault linkage, and notification routing. These are future-state integration concepts only. A production version would require OAuth, API permissions, secure token handling, administrative consent, enterprise security review, and a shared backend or approved file storage architecture.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What This Demonstrates</h2>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="emoji">🧰</div>
+        <h3>Technical Program Management</h3>
+        <p>Structuring complex programs around governance, ownership, readiness, and staged execution.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🏭</div>
+        <h3>Engineering Operations</h3>
+        <p>Connecting product, manufacturing, and delivery workstreams into one operating model.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">📦</div>
+        <h3>Manufacturing Launch Planning</h3>
+        <p>Demonstrating launch readiness logic that ties milestone completion, risk control, and supplier readiness together.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🤝</div>
+        <h3>Cross-Functional Leadership</h3>
+        <p>Making stakeholder coordination, ownership clarity, and escalation paths visible.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🧩</div>
+        <h3>Stage-Gate Governance</h3>
+        <p>Showing how execution discipline, approvals, and milestone review can be organized for complex initiatives.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">⚖️</div>
+        <h3>Risk and Blocker Management</h3>
+        <p>Supporting a practical approach to issue escalation, mitigation planning, and decision support.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🧾</div>
+        <h3>Procurement Visibility</h3>
+        <p>Illustrating how supply chain risk, capital commitments, and lead times can be surfaced to decision makers.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">📄</div>
+        <h3>Project Evidence and File Governance</h3>
+        <p>Modeling file registration, document context, and evidence alignment for program execution.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">📣</div>
+        <h3>Executive Reporting</h3>
+        <p>Presenting status snapshots that communicate impact, blockers, and recommended next actions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="emoji">🧠</div>
+        <h3>Practical AI Decision-Support</h3>
+        <p>Using heuristic insights to flag readiness gaps, exposure patterns, and action priorities.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom-cta">
+    <a href="/projects" class="button primary">Back to Projects</a>
+    <a href="/resume" class="button secondary">View Resume</a>
+    <a href="/contact" class="button secondary">Contact Me</a>
+  </section>
+
+  <div class="image-modal" id="screenshot-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-shell" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" aria-label="Close screenshot modal" data-modal-close>×</button>
+      <div class="modal-inner">
+        <div class="modal-image-panel">
+          <img id="modal-image" src="" alt="" />
+        </div>
+        <div class="modal-controls">
+          <button class="button secondary modal-prev" type="button">Previous</button>
+          <button class="button secondary modal-next" type="button">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
+
+<script>
+  const modal = document.getElementById('screenshot-modal');
+  const modalImage = document.getElementById('modal-image');
+  const modalPrev = document.querySelector('.modal-prev');
+  const modalNext = document.querySelector('.modal-next');
+  const modalCloseButtons = document.querySelectorAll('[data-modal-close]');
+  const screenshotItems = Array.from(document.querySelectorAll('img[data-modal-group]'));
+
+  if (modal && modalImage && modalPrev && modalNext && screenshotItems.length) {
+    const groups = screenshotItems.reduce((map, img) => {
+      const group = img.dataset.modalGroup;
+      if (!map[group]) map[group] = [];
+      map[group].push(img);
+      return map;
+    }, {});
+
+    let activeGroup = null;
+    let activeIndex = 0;
+
+    const updateModal = () => {
+      const groupItems = groups[activeGroup] || [];
+      const activeImage = groupItems[activeIndex];
+      if (!activeImage) return;
+      modalImage.src = activeImage.src;
+      modalImage.alt = activeImage.alt;
+      modalPrev.style.display = activeIndex > 0 ? 'inline-flex' : 'none';
+      modalNext.style.display = activeIndex < groupItems.length - 1 ? 'inline-flex' : 'none';
+    };
+
+    const openModal = (group, index) => {
+      activeGroup = group;
+      activeIndex = index;
+      updateModal();
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    };
+
+    const closeModal = () => {
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    };
+
+    screenshotItems.forEach((img) => {
+      img.addEventListener('click', () => {
+        const group = img.dataset.modalGroup;
+        const index = parseInt(img.dataset.modalIndex, 10) || 0;
+        openModal(group, index);
+      });
+    });
+
+    modalPrev.addEventListener('click', () => {
+      if (activeIndex > 0) {
+        activeIndex -= 1;
+        updateModal();
+      }
+    });
+
+    modalNext.addEventListener('click', () => {
+      const groupItems = groups[activeGroup] || [];
+      if (activeIndex < groupItems.length - 1) {
+        activeIndex += 1;
+        updateModal();
+      }
+    });
+
+    modalCloseButtons.forEach((button) => {
+      button.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (!modal.classList.contains('active')) return;
+      if (event.key === 'Escape') closeModal();
+      if (event.key === 'ArrowLeft') modalPrev.click();
+      if (event.key === 'ArrowRight') modalNext.click();
+    });
+  }
+</script>

@@ -1,0 +1,388 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Edge AI Technician Assistant | Travis Wooley" active="projects">
+  <section class="hero">
+    <div class="eyebrow">CONFIDENTIAL ARCHITECTURE CASE STUDY</div>
+
+    <h1>Edge AI Technician Assistant</h1>
+
+    <h2>Local AI Knowledge Retrieval for Technician Workflows</h2>
+
+    <p class="hero-text">
+      Edge AI Technician Assistant is a sanitized architecture case study showing
+      how a local AI assistant can help technicians query SOPs, technical
+      documentation, inventory data, and troubleshooting knowledge without
+      exposing proprietary information to cloud-based AI systems.
+    </p>
+
+    <p class="hero-text">
+      The system is designed around a simple but powerful idea: keep sensitive
+      operational data local, while giving technicians a natural-language
+      interface for finding procedures, locating parts, and accelerating
+      troubleshooting.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#overview" class="button primary">Explore Architecture</a>
+      <a href="/projects" class="button secondary">Back to Projects</a>
+    </div>
+  </section>
+
+  <section class="quick-facts">
+    <div class="fact-card">
+      <h3>Status</h3>
+      <p>Confidential Architecture Case Study</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Purpose</h3>
+      <p>Local AI Assistance for Technical Teams</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Core Components</h3>
+      <p>MiniPC • OpenClaw • Ollama • SOPs • Inventory Data</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Focus</h3>
+      <p>Secure Knowledge Retrieval & Troubleshooting Support</p>
+    </div>
+  </section>
+
+  <section id="overview">
+    <h2>The Problem</h2>
+
+    <div class="card">
+      <p>
+        Technicians often need to search across SOPs, technical documentation,
+        inventory records, troubleshooting notes, and institutional knowledge
+        while actively working on physical equipment or production issues.
+      </p>
+
+      <p>
+        When that information is scattered across folders, spreadsheets, binders,
+        tribal knowledge, or disconnected systems, technicians lose time looking
+        for the right procedure, verifying part locations, or deciding what to
+        check next.
+      </p>
+
+      <p>
+        Cloud-based AI tools introduce another challenge: many organizations
+        cannot safely expose proprietary procedures, product documentation,
+        customer data, internal part numbers, or operational records to external
+        models.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The Solution</h2>
+
+    <div class="card">
+      <p>
+        Edge AI Technician Assistant is an edge-deployed AI architecture that
+        runs locally on a standalone MiniPC. It uses a local AI model through
+        Ollama, coordinated through an agent harness layer, and connects to
+        organization-controlled knowledge sources such as SOP folders, technical
+        documentation, and inventory exports.
+      </p>
+
+      <p>
+        Instead of sending sensitive operational data to a third-party cloud
+        model, the assistant keeps the knowledge base and inference workflow
+        local. Technicians can ask natural-language questions and receive
+        context-aware answers based on approved internal documentation and
+        inventory data.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Architecture Overview</h2>
+
+    <p class="gallery-intro">
+      This architecture is intentionally shown at a high level. Proprietary
+      documents, real workflows, part numbers, product names, screenshots, and
+      internal data structures are omitted.
+    </p>
+
+    <div class="architecture-diagram">
+      <div class="architecture-layer user-layer">
+        <div class="architecture-node">
+          <span class="architecture-icon">👷</span>
+          <h3>Technician</h3>
+          <p>Asks practical questions during active work.</p>
+        </div>
+      </div>
+
+      <div class="architecture-arrow">↓</div>
+
+      <div class="architecture-layer">
+        <div class="architecture-node">
+          <span class="architecture-icon">💬</span>
+          <h3>Local Assistant Interface</h3>
+          <p>Natural-language search and troubleshooting support.</p>
+        </div>
+      </div>
+
+      <div class="architecture-arrow">↓</div>
+
+      <div class="architecture-layer split-layer">
+        <div class="architecture-node">
+          <span class="architecture-icon">🧩</span>
+          <h3>OpenClaw Harness</h3>
+          <p>Coordinates tool access, context handling, and assistant behavior.</p>
+        </div>
+
+        <div class="architecture-node">
+          <span class="architecture-icon">🧠</span>
+          <h3>Ollama Local LLM</h3>
+          <p>Runs the tuned local model on edge hardware.</p>
+        </div>
+      </div>
+
+      <div class="architecture-arrow">↓</div>
+
+      <div class="architecture-layer source-layer">
+        <div class="architecture-node">
+          <span class="architecture-icon">📘</span>
+          <h3>SOP Folder</h3>
+          <p>Approved procedures and work instructions.</p>
+        </div>
+
+        <div class="architecture-node">
+          <span class="architecture-icon">🛠️</span>
+          <h3>Technical Docs</h3>
+          <p>Reference material, troubleshooting guides, and manuals.</p>
+        </div>
+
+        <div class="architecture-node">
+          <span class="architecture-icon">📦</span>
+          <h3>Inventory Data</h3>
+          <p>Stock counts, part records, and bin locations from Inventory Manager.</p>
+        </div>
+      </div>
+
+      <div class="architecture-arrow">↓</div>
+
+      <div class="architecture-layer output-layer">
+        <div class="architecture-node">
+          <span class="architecture-icon">✅</span>
+          <h3>Technician Answer</h3>
+          <p>
+            Procedure guidance, part location, troubleshooting suggestions, and
+            escalation context.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Example Technician Workflows</h2>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="emoji">🔎</div>
+        <h3>Procedure Lookup</h3>
+        <p>
+          A technician can ask which SOP applies to a task, what the next step is,
+          or where to find the approved procedure for a specific operation.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">📦</div>
+        <h3>Part Location</h3>
+        <p>
+          The assistant can reference inventory data to help locate parts,
+          consumables, or tools by stock record, alternate SKU, or bin location.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">🛠️</div>
+        <h3>Troubleshooting Support</h3>
+        <p>
+          The assistant can help technicians reason through documented failure
+          modes, known corrective actions, and escalation criteria.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">🧭</div>
+        <h3>Training Support</h3>
+        <p>
+          New technicians can ask guided questions about procedures, terminology,
+          tools, and documentation without interrupting senior staff as often.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Edge AI Matters</h2>
+
+    <div class="card">
+      <p>
+        Many organizations want the productivity benefits of AI but cannot simply
+        upload proprietary operating procedures, product documentation, customer
+        records, part data, or internal process knowledge into external cloud
+        systems.
+      </p>
+
+      <p>
+        An edge-deployed assistant reduces that exposure by keeping the model,
+        document access, and operational data sources inside the organization’s
+        local environment. This makes the architecture especially relevant for
+        manufacturing, repair operations, laboratories, quality teams, field
+        service groups, regulated industries, and technical support environments.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>What This Demonstrates</h2>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="emoji">🔐</div>
+        <h3>Privacy-Aware AI Design</h3>
+        <p>
+          The system is designed around local execution and controlled knowledge
+          sources instead of exposing sensitive operational data to public AI
+          tools.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">🏭</div>
+        <h3>Real Operations Understanding</h3>
+        <p>
+          The architecture reflects how technicians actually work: they need
+          procedures, parts, context, and troubleshooting help quickly.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">🧠</div>
+        <h3>Practical AI Implementation</h3>
+        <p>
+          AI is applied as a workflow assistant connected to useful operational
+          data, not as a generic chatbot disconnected from the work.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">🧩</div>
+        <h3>Systems Integration</h3>
+        <p>
+          The project connects local hardware, a model runtime, assistant
+          orchestration, documentation folders, and inventory data into one
+          usable technician support system.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Confidentiality Boundary</h2>
+
+    <div class="card">
+      <p>
+        This project is presented as a sanitized architecture case study only.
+        Screenshots, internal documents, real SOP content, product names, part
+        numbers, inventory exports, repair procedures, and employer-specific
+        workflows are intentionally omitted.
+      </p>
+
+      <p>
+        The goal is to demonstrate the architecture, implementation approach,
+        and operational value of the system without revealing proprietary
+        information.
+      </p>
+    </div>
+  </section>
+
+  <style>
+    .architecture-diagram {
+      max-width: 1100px;
+      margin: 40px auto 0 auto;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 22px;
+      padding: 32px;
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.07);
+    }
+
+    .architecture-layer {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .split-layer,
+    .source-layer {
+      align-items: stretch;
+    }
+
+    .architecture-node {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+      min-width: 220px;
+      flex: 1;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .user-layer .architecture-node,
+    .output-layer .architecture-node {
+      max-width: 520px;
+      background: #eef2ff;
+      border-color: #dbeafe;
+    }
+
+    .architecture-icon {
+      font-size: 36px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .architecture-node h3 {
+      color: #1e3a8a;
+      margin: 0 0 8px 0;
+      font-size: 20px;
+    }
+
+    .architecture-node p {
+      margin: 0;
+      color: #475569;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .architecture-arrow {
+      text-align: center;
+      font-size: 30px;
+      color: #2563eb;
+      font-weight: 800;
+      margin: 14px 0;
+    }
+
+    @media (max-width: 700px) {
+      .architecture-diagram {
+        padding: 22px;
+      }
+
+      .architecture-node {
+        min-width: 100%;
+      }
+    }
+  </style>
+</MainLayout>

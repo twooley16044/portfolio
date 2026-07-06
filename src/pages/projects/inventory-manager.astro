@@ -1,0 +1,432 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+---
+
+<MainLayout title="Inventory Manager | Travis Wooley" active="projects">
+
+  <section class="hero">
+    <div class="eyebrow">PROJECT CASE STUDY</div>
+
+    <h1>Inventory Manager</h1>
+
+    <h2>Lightweight Barcode-Ready Stock Control System</h2>
+
+    <p class="hero-text">
+      Inventory Manager is a standalone, white-labeled web application designed
+      for fast physical inventory tracking in warehouses, workshops, and
+      manufacturing environments. It bridges the gap between fragile spreadsheets
+      and expensive enterprise inventory software.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#overview" class="button primary">Explore Project</a>
+      <a href="/projects" class="button secondary">Back to Projects</a>
+    </div>
+  </section>
+
+  <section class="quick-facts">
+    <div class="fact-card">
+      <h3>Status</h3>
+      <p>Sanitized Portfolio Version</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Purpose</h3>
+      <p>Fast Floor-Level Inventory Tracking</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Primary Features</h3>
+      <p>Barcode Scanning • CSV Import/Export • Bin Locations</p>
+    </div>
+
+    <div class="fact-card">
+      <h3>Focus</h3>
+      <p>Simple, Reliable Physical Stock Control</p>
+    </div>
+  </section>
+
+  <section id="overview">
+    <h2>The Problem</h2>
+
+    <div class="card">
+      <p>
+        Many small warehouses, labs, workshops, and manufacturing teams manage
+        inventory in static spreadsheets because full enterprise systems are too
+        expensive, too complex, or too slow to deploy.
+      </p>
+
+      <p>
+        The result is predictable: inaccurate counts, unclear item locations,
+        slow lookups, duplicate records, and excessive time spent manually
+        updating stock levels.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>The Solution</h2>
+
+    <div class="card">
+      <p>
+        Inventory Manager provides a fast browser-based interface for tracking
+        parts, tools, consumables, and production materials. It supports
+        searchable item records, primary and secondary SKUs, physical bin
+        locations, stock adjustment workflows, CSV import/export, and standard
+        USB barcode scanner input.
+      </p>
+
+      <p>
+        The application is intentionally lightweight: it is designed for fast
+        floor use, not administrative bloat.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Core Capabilities</h2>
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="emoji">🏷️</div>
+        <h3>Barcode-Ready Workflow</h3>
+        <p>
+          Designed around standard keyboard-wedge barcode scanners so stock can
+          be searched, added, or removed quickly without custom scanner software.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">📍</div>
+        <h3>Bin Location Mapping</h3>
+        <p>
+          Each item includes a physical storage location so users can find parts
+          quickly instead of relying on memory or tribal knowledge.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">📄</div>
+        <h3>CSV Import & Export</h3>
+        <p>
+          Existing inventory lists can be imported, and current inventory data can
+          be exported for reporting, backups, or spreadsheet workflows.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">⚡</div>
+        <h3>Local Persistence</h3>
+        <p>
+          Inventory records persist in the browser across refreshes without
+          requiring a server.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Product Gallery</h2>
+
+    <p class="gallery-intro">
+      The application is organized around a high-density table, persistent item
+      details panel, rapid stock adjustment controls, and modal workflows for
+      adding or editing inventory records. Click any card to open a larger
+      product walkthrough.
+    </p>
+
+    <div class="product-gallery">
+
+      <div class="gallery-feature">
+        <img
+          src="/images/inventory-manager/IMHome.png"
+          alt="Inventory Manager main interface"
+        />
+
+        <div>
+          <span class="gallery-label">Main Workspace</span>
+
+          <h3>Inventory Control Workspace</h3>
+
+          <p>
+            A dense, searchable inventory table paired with a persistent item
+            detail panel for fast lookup, stock review, and adjustment.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-feature">
+        <img
+          src="/images/inventory-manager/IMNewItem.png"
+          alt="Inventory Manager create new item modal"
+        />
+
+        <div>
+          <span class="gallery-label">Item Creation</span>
+
+          <h3>Add Items Quickly</h3>
+
+          <p>
+            A focused modal workflow captures primary SKU, secondary SKU, product
+            name, bin location, and starting stock without leaving the main screen.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-feature">
+        <img
+          src="/images/inventory-manager/IMEditItem.png"
+          alt="Inventory Manager edit item modal"
+        />
+
+        <div>
+          <span class="gallery-label">Record Maintenance</span>
+
+          <h3>Edit and Maintain Records</h3>
+
+          <p>
+            Existing inventory records can be updated through a clean edit form
+            while keeping the item list visible in the background.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>What This Demonstrates</h2>
+
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="emoji">🧠</div>
+        <h3>Operational Understanding</h3>
+        <p>
+          The application reflects real floor needs: fast search, clear locations,
+          simple stock changes, and minimal training overhead.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">🛠️</div>
+        <h3>Practical Tool Building</h3>
+        <p>
+          Instead of overengineering the solution, the application focuses on a
+          narrow, high-value workflow and makes it fast.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="emoji">🔒</div>
+        <h3>Sanitized Portfolio Version</h3>
+        <p>
+          The project has been white-labeled and populated with generic industrial
+          data so it can be shared safely without exposing employer-specific
+          information.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="image-modal" class="image-modal">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close product preview">
+        ×
+      </button>
+
+      <div class="modal-layout">
+        <div class="modal-image-panel">
+          <img id="modal-image" src="" alt="" />
+        </div>
+
+        <div class="modal-info-panel">
+          <span id="modal-label" class="gallery-label"></span>
+
+          <h3 id="modal-title"></h3>
+
+          <p id="modal-description" class="modal-summary"></p>
+
+          <div class="modal-detail">
+            <h4>Business Problem</h4>
+            <p id="modal-problem"></p>
+          </div>
+
+          <div class="modal-detail">
+            <h4>Application Capability</h4>
+            <p id="modal-capability"></p>
+          </div>
+
+          <div class="modal-detail">
+            <h4>My Role</h4>
+            <p id="modal-role"></p>
+          </div>
+
+          <div class="modal-detail">
+            <h4>Concepts Demonstrated</h4>
+            <p id="modal-concepts"></p>
+          </div>
+
+          <div class="modal-nav">
+            <button id="modal-prev" class="modal-nav-btn" type="button">
+              ← Previous
+            </button>
+
+            <button id="modal-next" class="modal-nav-btn" type="button">
+              Next →
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script is:inline>
+    const galleryCards = Array.from(document.querySelectorAll(".gallery-feature"));
+
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const modalLabel = document.getElementById("modal-label");
+    const modalTitle = document.getElementById("modal-title");
+    const modalDescription = document.getElementById("modal-description");
+    const modalProblem = document.getElementById("modal-problem");
+    const modalCapability = document.getElementById("modal-capability");
+    const modalRole = document.getElementById("modal-role");
+    const modalConcepts = document.getElementById("modal-concepts");
+    const modalClose = document.getElementById("modal-close");
+    const modalPrev = document.getElementById("modal-prev");
+    const modalNext = document.getElementById("modal-next");
+
+    let currentIndex = 0;
+
+    const moduleDetails = {
+      "inventory control workspace": {
+        problem:
+          "Inventory users often waste time searching through spreadsheets or physically checking shelves because item records, quantities, and storage locations are not visible from one reliable screen.",
+        capability:
+          "The main workspace combines searchable inventory data, stock counts, bin locations, selected item details, and rapid adjustment controls in a single high-density interface.",
+        role:
+          "I designed the interface around practical floor use: search quickly, select an item, verify location, check stock, and adjust quantities without unnecessary navigation.",
+        concepts:
+          "Inventory UX, searchable tables, stock adjustment workflow, bin location mapping, barcode-ready operations"
+      },
+
+      "add items quickly": {
+        problem:
+          "Adding new inventory records in spreadsheets or enterprise systems can be slow and inconsistent, especially when items have multiple identifiers, vendor part numbers, or storage locations.",
+        capability:
+          "The add-item workflow captures primary SKU, secondary SKU, product name, bin location, and starting stock in a focused modal form without leaving the main workspace.",
+        role:
+          "I designed this workflow to minimize friction and encourage complete, structured records from the moment an item enters the system.",
+        concepts:
+          "Modal UX, SKU management, inventory record creation, data entry workflow, form design"
+      },
+
+      "edit and maintain records": {
+        problem:
+          "Inventory records change over time as bin locations move, alternate SKUs are added, item descriptions are corrected, or stock counts need manual adjustment.",
+        capability:
+          "The edit workflow lets users update item metadata and stock values through a clean form while retaining the broader inventory context behind the modal.",
+        role:
+          "I built the record maintenance flow to make updates easy without sending users through multiple pages or complex administrative screens.",
+        concepts:
+          "CRUD workflows, record maintenance, stock correction, item metadata, responsive web interface"
+      }
+    };
+
+    function normalizeTitle(text) {
+      return text.trim().toLowerCase();
+    }
+
+    function getDetailsForCard(card) {
+      const title = card.querySelector("h3")?.textContent || "";
+      const key = normalizeTitle(title);
+
+      return moduleDetails[key] || {
+        problem:
+          "Physical inventory tracking breaks down when records are hard to search, difficult to update, or disconnected from real-world storage locations.",
+        capability:
+          "This screen demonstrates how Inventory Manager turns inventory data into a fast, practical workflow for floor users.",
+        role:
+          "I designed and built this feature as part of a white-labeled inventory management application focused on speed and usability.",
+        concepts:
+          "Inventory management, barcode workflows, operational UX, lightweight web applications"
+      };
+    }
+
+    function openModal(index) {
+      currentIndex = index;
+
+      const card = galleryCards[currentIndex];
+      const img = card.querySelector("img");
+      const label = card.querySelector(".gallery-label");
+      const title = card.querySelector("h3");
+      const description = card.querySelector("p");
+      const details = getDetailsForCard(card);
+
+      modalImage.src = img.src;
+      modalImage.alt = img.alt;
+      modalLabel.textContent = label.textContent;
+      modalTitle.textContent = title.textContent;
+      modalDescription.textContent = description.textContent;
+      modalProblem.textContent = details.problem;
+      modalCapability.textContent = details.capability;
+      modalRole.textContent = details.role;
+      modalConcepts.textContent = details.concepts;
+
+      modal.classList.add("active");
+      document.body.classList.add("modal-open");
+    }
+
+    function closeModal() {
+      modal.classList.remove("active");
+      document.body.classList.remove("modal-open");
+    }
+
+    function showPrevious() {
+      const newIndex = (currentIndex - 1 + galleryCards.length) % galleryCards.length;
+      openModal(newIndex);
+    }
+
+    function showNext() {
+      const newIndex = (currentIndex + 1) % galleryCards.length;
+      openModal(newIndex);
+    }
+
+    galleryCards.forEach((card, index) => {
+      card.setAttribute("role", "button");
+      card.setAttribute("tabindex", "0");
+
+      card.addEventListener("click", () => openModal(index));
+
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openModal(index);
+        }
+      });
+    });
+
+    modalClose.addEventListener("click", closeModal);
+    modalPrev.addEventListener("click", showPrevious);
+    modalNext.addEventListener("click", showNext);
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        closeModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (!modal.classList.contains("active")) return;
+
+      if (event.key === "Escape") closeModal();
+      if (event.key === "ArrowLeft") showPrevious();
+      if (event.key === "ArrowRight") showNext();
+    });
+  </script>
+
+</MainLayout>

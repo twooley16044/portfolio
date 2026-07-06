@@ -1,28 +1,92 @@
 ---
-const name = "Travis Wooley";
 import MainLayout from "../layouts/MainLayout.astro";
+
+const projects = [
+  {
+    title: "Build-OS",
+    description:
+      "A unified industrial intelligence platform combining manufacturing operations, quality, maintenance, production planning, AI assistance, and configurable admin controls.",
+    status: "Featured Project",
+    link: "/projects/build-os",
+    image: "/images/build-os/Dashboard.png",
+    cta: "View Case Study →"
+  },
+  {
+    title: "QualityOS",
+    description:
+      "AI-assisted QMS prototype simulating NCR/CAPA workflows, controlled document lifecycles, evidence attachments, audit trail concepts, reports, admin governance, and enterprise readiness planning.",
+    status: "High-Fidelity Prototype",
+    link: "/projects/qualityos",
+    image: "/images/qualityos/QOSDashboard.png",
+    cta: "View Case Study →"
+  },
+  {
+    title: "ProjectForge",
+    description:
+      "Technical Program Management platform for product engineering and industrial execution, featuring stage-gate tracking, launch readiness, risks, RACI, procurement visibility, local-first persistence, file vault concepts, activity threads, executive reporting, and simulated enterprise integration readiness.",
+    status: "High-Fidelity Prototype",
+    link: "/projects/project-forge",
+    image: "/images/ProjectForge/PFDashboard.png",
+    cta: "View Case Study →"
+  },
+  {
+    title: "Inventory Manager",
+    description:
+      "A lightweight, barcode-ready inventory control application with searchable stock records, bin locations, rapid adjustments, and CSV import/export.",
+    status: "Completed Case Study",
+    link: "/projects/inventory-manager",
+    image: "/images/inventory-manager/IMHome.png",
+    cta: "View Case Study →"
+  },
+  {
+    title: "Edge AI Technician Assistant",
+    description:
+      "A confidential architecture case study for a local AI assistant that connects SOPs, technical documentation, and inventory data to support technician workflows without exposing proprietary data to cloud-based AI systems.",
+    status: "Confidential Architecture Case Study",
+    link: "/projects/edge-ai-technician-assistant",
+    cta: "View Architecture →"
+  },
+  {
+    title: "Personal Portfolio & Deployment Pipeline",
+    description:
+      "A custom Astro portfolio site built to showcase technical operations projects, case studies, resume content, and professional positioning. Includes reusable layouts, responsive project pages, image galleries, modal walkthroughs, GitHub version control, Vercel deployment, and Cloudflare domain management.",
+    status: "Complete",
+    link: "/",
+    cta: "View Site →"
+  }
+];
 ---
 
 <MainLayout title="Projects | Travis Wooley" active="projects">
+  <h1>Projects</h1>
 
-<h1>Projects</h1>
+  <p class="hero-text">
+    Rather than simple coding exercises, these projects represent solutions to
+    real operational problems. My focus is building systems that improve
+    productivity, automate repetitive work, and make information easier to access.
+  </p>
 
-<p>
-Engineering systems, automation tools, and manufacturing operations work.
-</p>
+  <div class="project-grid">
+    {projects.map((project) => (
+      <div class="project-card">
+        {project.image && (
+          <img src={project.image} alt={project.title} />
+        )}
 
-<div class="card">
-<h3>Build OS — Internal AI Operations System</h3>
-<p>
-AI-powered internal system for SOP access, troubleshooting, and inventory workflows.
-</p>
-</div>
+        <div class="project-content">
+          <span class="status">
+            {project.status}
+          </span>
 
-<div class="card">
-<h3>RMA Refurbishment Program</h3>
-<p>
-End-to-end industrial refurbishment system delivering seven-figure annual savings.
-</p>
-</div>
+          <h2>{project.title}</h2>
 
+          <p>{project.description}</p>
+
+          <a class="button primary" href={project.link}>
+            {project.cta}
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
 </MainLayout>
