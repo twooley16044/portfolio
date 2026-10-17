@@ -1,0 +1,269 @@
+.prism-page {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.prism-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.prism-back {
+  color: #475569;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.prism-back:hover { color: #2563eb; }
+
+.prism-shell {
+  margin-top: 14px;
+  overflow: hidden;
+  border: 1px solid #dbe4f0;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(30, 58, 138, .14);
+}
+
+.prism-hud {
+  display: flex;
+  justify-content: center;
+  gap: clamp(24px, 10vw, 100px);
+  padding: 14px 20px 12px;
+  background: #fff;
+}
+
+.prism-hud div {
+  display: grid;
+  min-width: 68px;
+  gap: 1px;
+  text-align: center;
+}
+
+.prism-hud span {
+  color: #52627b;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .13em;
+}
+
+.prism-hud strong {
+  color: #1e3a8a;
+  font-size: 25px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.prism-hud .prism-time-stat strong { font-size: 31px; }
+#prism-lives { color: #d92f80; letter-spacing: 2px; }
+
+#prism-time.is-urgent {
+  color: #d94656;
+  animation: prism-timer-pulse .75s ease-in-out infinite alternate;
+}
+
+@keyframes prism-timer-pulse {
+  from { opacity: 1; }
+  to { opacity: .62; }
+}
+
+.prism-power-status {
+  height: 0;
+  overflow: hidden;
+  background: #f1edff;
+  color: #5b3cc4;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-align: center;
+  transition: height .18s ease, padding .18s ease;
+}
+
+.prism-power-status.is-active {
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.prism-stage {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+  aspect-ratio: 800 / 520;
+  background: #121733;
+  touch-action: pan-y;
+}
+
+.prism-stage.is-playing,
+.prism-stage.is-playing #prism-canvas { touch-action: none; }
+
+#prism-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: inherit;
+}
+
+.prism-toast {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  max-width: calc(100% - 24px);
+  padding: 9px 15px;
+  transform: translateX(-50%);
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 999px;
+  background: rgba(26, 31, 70, .94);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, .2);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.prism-toast:empty { display: none; }
+.prism-toast:not(:empty) { animation: prism-toast-in .2s ease-out both; }
+
+@keyframes prism-toast-in {
+  from { opacity: 0; transform: translate(-50%, -5px) scale(.97); }
+  to { opacity: 1; transform: translate(-50%, 0) scale(1); }
+}
+
+.prism-overlay {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(13, 18, 47, .56);
+  backdrop-filter: blur(4px);
+  transition: opacity .2s ease;
+}
+
+.prism-overlay.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.prism-overlay-card {
+  width: min(100%, 440px);
+  padding: 25px 28px 26px;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background: rgba(27, 32, 72, .96);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, .3);
+  color: #fff;
+  text-align: center;
+}
+
+.prism-orbit {
+  display: inline-grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #2dd4bf, #8b5cf6, #f472b6);
+  box-shadow: 0 0 24px rgba(139, 92, 246, .55);
+  color: #fff5ae;
+  font-size: 24px;
+}
+
+.prism-overlay-card h2 {
+  margin: 10px 0 5px;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  font-size: clamp(22px, 4vw, 28px);
+  line-height: 1.2;
+}
+
+.prism-overlay-card p { margin: 0; }
+.prism-overlay-card .prism-prompt { color: #e4ddff; font-size: 15px; font-weight: 700; }
+.prism-overlay-card .prism-instructions { margin-top: 10px; color: #f1f3ff; font-size: 14px; line-height: 1.5; }
+.prism-controls { margin-top: 9px !important; color: #c9d0eb; font-size: 12px; line-height: 1.5; }
+.prism-controls b { color: #fff; }
+.prism-controls span { color: #93a0ca; padding: 0 3px; }
+.prism-start-best { margin-top: 10px !important; color: #c2d7ff; font-size: 12px; font-variant-numeric: tabular-nums; }
+
+.prism-results {
+  display: grid;
+  gap: 2px;
+  margin: 14px auto 15px;
+}
+
+.prism-results[hidden] { display: none; }
+.prism-results span { color: #c9d0eb; font-size: 10px; font-weight: 800; letter-spacing: .14em; }
+.prism-results strong { color: #fff; font-size: clamp(34px, 8vw, 48px); font-variant-numeric: tabular-nums; line-height: 1.05; }
+.prism-results p { margin-top: 3px; color: #bcefe8; font-size: 13px; font-weight: 700; }
+.prism-overlay.is-new-record .prism-results strong { color: #ffe58b; }
+.prism-overlay.is-victory .prism-orbit,
+.prism-overlay.is-new-record .prism-orbit { animation: prism-celebrate .8s ease-in-out infinite alternate; }
+
+@keyframes prism-celebrate {
+  from { transform: rotate(-8deg) scale(1); }
+  to { transform: rotate(8deg) scale(1.09); }
+}
+
+.prism-button {
+  min-width: 142px;
+  min-height: 48px;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px 24px;
+  background: linear-gradient(100deg, #8df6e9, #9fd4ff, #d6a5ff);
+  box-shadow: 0 5px 20px rgba(104, 229, 226, .25);
+  color: #172044;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.prism-button:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(104, 229, 226, .38); }
+.prism-button:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+
+.prism-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 13px 20px;
+  color: #52627b;
+  font-size: 12px;
+}
+
+.prism-footer b { color: #6d3ec9; }
+.prism-note { margin-top: 18px; color: #64748b; font-size: 14px; text-align: center; }
+
+@media (max-width: 600px) {
+  .prism-hud { justify-content: space-around; gap: 8px; padding: 12px 8px 10px; }
+  .prism-hud div { min-width: 56px; }
+  .prism-hud strong { font-size: 22px; }
+  .prism-hud .prism-time-stat strong { font-size: 28px; }
+  .prism-stage { min-height: 260px; }
+  .prism-overlay { overflow-y: auto; }
+  .prism-overlay-card { padding: 20px 16px; }
+  .prism-overlay-card .prism-instructions { font-size: 13px; }
+  .prism-controls { font-size: 11px; }
+  .prism-footer { justify-content: center; padding: 11px 12px; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prism-overlay,
+  .prism-button,
+  .prism-power-status { transition: none; }
+  .prism-toast:not(:empty) { animation: none; }
+  #prism-time.is-urgent,
+  .prism-overlay.is-victory .prism-orbit,
+  .prism-overlay.is-new-record .prism-orbit { animation: none; }
+}

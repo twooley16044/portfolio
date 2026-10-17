@@ -1,0 +1,48 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import "../../styles/prism-break.css";
+---
+
+<MainLayout title="Prism Break | Travis Wooley" active="projects">
+  <section class="prism-page">
+    <a class="prism-back" href="/projects">← Back to projects</a>
+    <h1 class="prism-sr-only">Prism Break</h1>
+
+    <section class="prism-shell" aria-label="Prism Break game">
+      <div class="prism-hud" aria-label="Game status">
+        <div class="prism-time-stat"><span>TIME</span><strong id="prism-time">60</strong></div>
+        <div><span>SCORE</span><strong id="prism-score">0</strong></div>
+        <div><span>LIVES</span><strong id="prism-lives">3</strong></div>
+      </div>
+      <div class="prism-power-status" id="prism-power-status"></div>
+      <div class="prism-stage" id="prism-stage">
+        <canvas id="prism-canvas" aria-label="Game playfield. Move your paddle with mouse, keyboard, or touch."></canvas>
+        <div class="prism-toast" id="prism-toast" role="status" aria-live="polite"></div>
+        <div class="prism-overlay" id="prism-overlay">
+          <div class="prism-overlay-card">
+            <span class="prism-orbit" aria-hidden="true">✦</span>
+            <h2 id="prism-message-title">Prism Break</h2>
+            <p class="prism-prompt" id="prism-message">Break bricks. Catch power-ups. Beat the clock.</p>
+            <p class="prism-instructions" id="prism-instructions">Move your paddle to bounce the ball and score as many points as possible in 60 seconds.</p>
+            <p class="prism-controls" id="prism-controls"><b>Desktop</b> ← → / A D or mouse <span>·</span> <b>Mobile</b> drag on the playfield</p>
+            <p class="prism-start-best" id="prism-start-best"></p>
+            <div class="prism-results" id="prism-results" hidden>
+              <span>FINAL SCORE</span>
+              <strong id="prism-final-score">0</strong>
+              <p id="prism-best-result"></p>
+            </div>
+            <button class="prism-button" id="prism-start" type="button">Play</button>
+          </div>
+        </div>
+      </div>
+      <div class="prism-footer">
+        <span>Move with ← → / A D, your pointer, or touch</span>
+        <span>Clear every prism for a <b>+500</b> bonus</span>
+      </div>
+    </section>
+    <p class="prism-note">Three lives. One minute. How high can you score?</p>
+  </section>
+  <script>
+    import "../../scripts/prism-break.js";
+  </script>
+</MainLayout>
